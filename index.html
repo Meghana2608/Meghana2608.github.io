@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mallisetti Meghana | Portfolio</title>
+
+  <style>
+    :root {
+      --bg-light: #f5f7fa;
+      --text-light: #222;
+      --card-light: #fff;
+      --primary: #4a90e2;
+
+      --bg-dark: #0f172a;
+      --text-dark: #e2e8f0;
+      --card-dark: #1e293b;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      line-height: 1.6;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    body.dark {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, var(--primary), #357abd);
+      color: white;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: white;
+      color: var(--primary);
+      border: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-weight: 600;
+    }
+
+    .toggle-btn:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: var(--card-light);
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      transition: background 0.5s, transform 0.3s;
+      animation: fadeIn 1s ease-in;
+    }
+
+    body.dark section {
+      background: var(--card-dark);
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 15px;
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 15px;
+    }
+
+    ul li::before {
+      content: "▹";
+      color: var(--primary);
+      margin-right: 8px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #357abd;
+      color: white;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      section {
+        padding: 20px;
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="toggle-btn" onclick="toggleTheme()">🌙 Dark</button>
+    <h1>Mallisetti Meghana</h1>
+    <p>📍 Gajuwaka, Visakhapatnam | 📞 +91 8125969475</p>
+    <p>
+      <a href="mailto:meghanasenapati2608@gmail.com">📧 meghanasenapati2608@gmail.com</a> |
+      <a href="https://github.com/Meghana2608" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/meghana-senapati" target="_blank">LinkedIn</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>Objective</h2>
+    <p>
+      To secure a challenging position in a dynamic organization that offers opportunities for growth
+      and allows me to utilize my skills and knowledge to contribute to the success of the company
+      while enhancing my professional and personal development.
+    </p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li><b>Masters in Computer Applications</b> – Sri Padmavati Mahila Visvavidyalayam, Tirupati (2024–2026)</li>
+      <li><b>Bachelor in Computer Science</b> – Chaitanya Degree & PG College for Women (2021–2024)</li>
+      <li><b>Intermediate (MPC)</b> – Chaitanya Junior College for Girls (2019–2021)</li>
+      <li><b>Secondary Education</b> – SFS High School (2018–2019)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div><b>Technical:</b> C, Java, Basic Python, DBMS</div>
+      <div><b>Tools:</b> Git, GitHub</div>
+      <div><b>Soft Skills:</b> Communication, Leadership, Problem-Solving, Multitasking</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <b>Cyber Security Intern</b> – Codec Technologies, India (Dec 2024 – Jan 2025)
+        <ul>
+          <li>Hands-on experience in threat analysis and vulnerability assessment.</li>
+          <li>Developed skills in network security and cryptography.</li>
+        </ul>
+      </li>
+      <li>
+        <b>Java Full Stack Intern</b> – Millennium Software Solutions Pvt. Ltd. (Feb 2024 – Jun 2024)
+        <ul>
+          <li>Worked on real-time projects covering both front-end and back-end development.</li>
+          <li>Enhanced knowledge in full stack technologies.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <h3>Java Banking Application (May 2024 – Jun 2024)</h3>
+    <p><b>Technologies Used:</b> Java, MySQL, JDBC</p>
+    <ul>
+      <li>User account creation with secure authentication.</li>
+      <li>Supports deposits, withdrawals, and balance inquiries.</li>
+      <li>Password management and robust error handling.</li>
+    </ul>
+    <p><b>Achievements:</b> Improved data security and enhanced user experience.</p>
+  </section>
+
+  <section>
+    <h2>Certificates</h2>
+    <ul>
+      <li>TCS ION Career Edge – <a href="https://drive.google.com/file/d/1TOe2yihYAYVYFprPRbSvQp2cqwih148A/view?usp=sharing" target="_blank">View Certificate</a></li>
+      <li>HTML and CSS Course – <a href="https://drive.google.com/file/d/1zNYk1g4fT4RDhRq6rhoP_gdXM4TaZY4e/view?usp=sharing" target="_blank">View Certificate</a></li>
+      <li>Cybersecurity Internship – <a href="https://drive.google.com/file/d/1jTdz7llOhIQ0Bi9YLkz7nhSY_mDvWN-R/view?usp=sharing" target="_blank">View Certificate</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Extra-Curricular Activities</h2>
+    <p><b>NSS Volunteer</b> (Oct 2024 – Dec 2026)</p>
+    <ul>
+      <li>Participated in community service and welfare programs.</li>
+      <li>Organized events promoting education, health, and environment.</li>
+      <li>Developed leadership and teamwork through volunteering.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Mallisetti Meghana | Built with ❤️ using HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const btn = document.querySelector('.toggle-btn');
+      if (document.body.classList.contains('dark')) {
+        btn.textContent = '☀️ Light';
+      } else {
+        btn.textContent = '🌙 Dark';
+      }
+    }
+  </script>
+</body>
+</html>
